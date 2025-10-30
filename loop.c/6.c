@@ -1,0 +1,11 @@
+// write a program to print table of any number.
+#include <stdio.h>
+int main()
+{
+    int i;
+    for (i = 3; i <= 30; i = i + 3)
+    {
+        printf("%d\n", i);
+    }
+    return 0;
+}

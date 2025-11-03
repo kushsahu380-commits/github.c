@@ -2,19 +2,15 @@
 #include <stdio.h>
 int main()
 {
-    int x, y, z, i;
+    int x, count;
+    count = 0;
     printf("Enter the number");
     scanf("%d", &x);
-    for (i = 1; i <= 100; i++)
+    while (x != 0)
     {
-        y = x % 10;
-        if (y == 0)
-        {
-            break;
-        }
         x = x / 10;
+        count++;
     }
-    i--;
-    printf("%d", i);
+    printf("%d",count);
     return 0;
 }

@@ -1,27 +1,26 @@
 // print the given pattern.
-//    *
-//    *
-//  *****
-//    *
-//    *
+// ******
+// *    *
+// *    *
+// ******
 #include <stdio.h>
 #include <conio.h>
 int main()
 {
-    for (int i = 1; i <= 5; i++)
+    for (int i = 1; i <= 4; i++)
     {
-        if (i == 3)
+        if (i == 1 || i == 4)
         {
-            for (int j = 1; j <= 5; j++)
+            for (int j = 1; j <= 6; j++)
             {
                 printf("*");
             }
         }
         else
         {
-            for (int j = 1; j <= 5; j++)
+            for (int j = 1; j <= 6; j++)
             {
-                if (j == 3)
+                if (j == 1 || j == 6)
                 {
                     printf("*");
                 }

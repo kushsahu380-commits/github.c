@@ -1,7 +1,7 @@
 //   1
 //  123
 // 12345
-//1234567
+// 1234567
 #include <stdio.h>
 #include <conio.h>
 int main()

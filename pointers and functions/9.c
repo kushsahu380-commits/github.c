@@ -1,32 +1,24 @@
-//       1
-//      1 1
-//     1 2 1
-//    1 3 3 1
-//   1 4 6 4 1
-//  1 5 10 10 5 1
-// 1 6 15 20 15 6 1
 #include <stdio.h>
-int combination(int n, int r)
+int permutation(int n, int r)
 {
-    int x, s, nCr, y;
+    int y, x, z;
     x = 1;
-    s = 1;
     y = 1;
+    z = 1;
     for (int i = 1; i <= n; i++)
     {
         x = x * i;
     }
     for (int i = 1; i <= r; i++)
     {
-        s = s * i;
+        y = y * i;
     }
     for (int i = 1; i <= (n - r); i++)
     {
-        y = y * i;
+        z = z * i;
     }
-    int a = s * y;
-    nCr = x / a;
-    return nCr;
+    int nPr = x / z;
+    return nPr;
 }
 int main()
 {
@@ -38,8 +30,8 @@ int main()
         }
         for (int r = 0; r <= n; r++)
         {
-            int nCr = combination(n, r);
-            printf("%d ", nCr);
+            int nPr = permutation(n, r);
+            printf("%d ", nPr);
         }
         printf("\n");
     }

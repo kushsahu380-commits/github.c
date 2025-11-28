@@ -10,7 +10,6 @@ int factorial(int i)
     return y;
 }
 int main()
-
 {
     int n, z;
     printf("Enter first number :\n");

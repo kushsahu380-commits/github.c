@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int max = -1, arr[5] = {2, 17, 5, 12, 10};
+    int max, arr[5] = {2, -17, 5, 12, -10};
+    max = arr[0];
     for (int i = 0; i <= 4; i++)
     {
-
         if (arr[i] > max)
         {
             max = arr[i];

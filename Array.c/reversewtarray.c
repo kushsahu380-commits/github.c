@@ -6,7 +6,7 @@ void swaap(int arr[])
     while (i <= j)
     {
         temp = arr[i];
-        arr[i] = arr[j]; // sawpping inside while loop .
+        arr[i] = arr[j]; // swaaping inside while loop .
         arr[j] = temp;
         i++;
         j--;
